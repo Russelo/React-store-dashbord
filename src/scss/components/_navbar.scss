@@ -1,0 +1,46 @@
+@mixin getNavBarStyles {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    .container{
+      display: flex;
+      .search{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        color: $base-color;
+        gap: 1rem;
+        font-size: 1.5rem;
+        input{
+          border:none ;
+          color: white;
+          font-size: 1rem;
+          background-color: black;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-right: 1rem;
+      .bell{
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        // color: $base-color;
+      }
+      .image{
+        img{
+          height: 3rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

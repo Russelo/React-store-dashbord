@@ -1,0 +1,12 @@
+@mixin getRevenueStyles {
+  .revenue{
+    height:80%;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    @include getTitleStyles;
+    .graph{
+      height: 60%;
+    }
+  }
+}
